@@ -1,10 +1,10 @@
  .compo {
     width: 600px;
     height: 400px;
-    background-image: img/bg.jpg;
-    position fixed;
+    background-image: url(img/bg.jpg) ;
+    position: fixed;
     bottom: 200px;
-    right: 200px;•
+    right: 200px;
     z-index: 1;
 /* стилизуйте класс compo - класс для div,
  в котором будет расположена композиция 
@@ -12,17 +12,17 @@
 }
 
 .compo-item {
-    position: inherit;
+    position: absolute;
 
 /* стилизуйте общий класс для ВСЕХ картинок 
 планет и т.п. с указанием типа позиционирования */
 }
 
 .compo-item.planet1 {
-    width: 100px;
-    height: 100px
-    top=0px;
-    left=0px;
+    width: 200px;
+    height: 200px;
+    bottom:20px;
+    left:15px;
     z-index: 2;
  /* стилизуйте "подклассы" - ОТДЕЛЬНЫЕ классы для каждой
   картинки с использованием свойств top, left, right,
@@ -32,26 +32,49 @@
 */
 } 
 .compo-item.planet2{
-    width: 100px;
-    height: 100px
+    width: 300px;
+    height: 300px;
+    /* top:; */
+    bottom: 150;
+    /* left:; */
+    right: 0;
     z-index: 3;
 
 }
 .compo-item.planet3{
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
+    right: 150px;
+    bottom: 200px;
     z-index: 4;
 
 }
 
 .compo-item.s{
+    left: 300px;
+    bottom: 0;
+    z-index: 5;
 
 }
 .compo-item.ufo{
+    width: 50;
+    height: 50;
+    left: 0;
+    top: 5px;
+
 
 }
 .compo-item.a{
-
+    width: 10;
+    height: 13;
+    left: 245px;
+    bottom:280px ;
+}
+.compo-item.rocket{
+    width: 5;
+    height: 5;
+    bottom: 200px;
+    left: 50px;
 }
 
 
